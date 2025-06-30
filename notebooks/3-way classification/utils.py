@@ -7,3 +7,5 @@ class RNG:
     
     def __init__(self, seed):
         self.state = seed 
+        
+    
