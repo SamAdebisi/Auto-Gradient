@@ -8,4 +8,5 @@ class RNG:
     def __init__(self, seed):
         self.state = seed 
         
-    
+    def random_u32(self):
+        pass 
