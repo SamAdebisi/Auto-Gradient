@@ -5,4 +5,5 @@
 
 class RNG: 
     
-    def 
+    def __init__(self):
+        self.state = seed 
