@@ -79,4 +79,5 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
 
 def vis_color(nodes, color):
     # colors a set of nodes (for visualization)
-    
+    for n in nodes:
+        setattr(n, '_vis_color', color)
