@@ -68,3 +68,6 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
         goal_class = i % 3
         x, y, c = get_sample(goal_class)
         pts.append([[x, y], c])
+        
+    tr = pts[:int(0.8 * n)]
+    
