@@ -88,3 +88,9 @@ def trace(root):
     def build(v):
         if v not in nodes:
             nodes.append(v) 
+            for child in v._prev:
+                if (child, v) not in edges:
+                    edges.append((child, v))
+                build(child)
+    build(root)
+    return nodes, edges 
