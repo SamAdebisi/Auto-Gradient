@@ -71,3 +71,4 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
         
     tr = pts[:int(0.8 * n)]
     val = pts[int(0.8 * n):int(0.9 * n)]
+    te = pts[int(0.9 * n)]
