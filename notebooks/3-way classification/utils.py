@@ -25,4 +25,5 @@ class RNG:
         # random float32 in [a, b]
         return a + (b-a) * self.random() 
     
+    
 # data related 
