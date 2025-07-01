@@ -113,3 +113,4 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
                  style='filled', fillcolor=fillcolor, width='0.1', height='0.1', fontsize='10')
         if n._op:
             dot.node(name=str(id(n)) + n._op, label=n._op, width='0.1', height='0.1', fontsize='10')
+            dot.edge(str(id(n)))
