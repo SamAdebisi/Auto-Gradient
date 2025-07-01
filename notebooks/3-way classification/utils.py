@@ -15,3 +15,4 @@ class RNG:
         self.state ^= (self.state >> 12) & 0xFFFFFFFFFFFFFFFF
         self.state ^= (self.state << 25) & 0xFFFFFFFFFFFFFFFF
         self.state ^= (self.state >> 27) & 0xFFFFFFFFFFFFFFFF
+        return ((self.state * 0x2545F4914F6CDD1D) >> 32)
