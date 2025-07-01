@@ -50,3 +50,4 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
         
         if is_circles:
             return 2 
+        return 0 if is_yin else 1 
