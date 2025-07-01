@@ -102,3 +102,5 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
     """ 
     # brew install graphviz 
     # pip install graphviz 
+    from graphviz import Digraph 
+    assert rankdir in ['LR', 'TB']
