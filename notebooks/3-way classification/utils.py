@@ -58,3 +58,4 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
             y = random.uniform(0, 2 * r_big) 
             if ((x - r_big)**2 + (y - r_big)**2) ** 0.5 > r_big:
                 continue 
+            c = which_class(x, y)
