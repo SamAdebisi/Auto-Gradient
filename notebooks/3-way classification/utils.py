@@ -105,4 +105,4 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
     from graphviz import Digraph 
     assert rankdir in ['LR', 'TB']
     nodes, edges = trace(root)
-    
+    dot = Digraph(format=format, graph_attr={'rankdir':rankdir, 'nodesep': '0.1', 'ranksep': '0.4'})
