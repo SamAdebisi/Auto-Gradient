@@ -106,3 +106,6 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
     assert rankdir in ['LR', 'TB']
     nodes, edges = trace(root)
     dot = Digraph(format=format, graph_attr={'rankdir':rankdir, 'nodesep': '0.1', 'ranksep': '0.4'})
+    
+    for n in nodes:
+        fillcolor = n._vis_color if hasattr(n, '_vis_color') else "white" 
