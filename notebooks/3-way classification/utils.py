@@ -35,3 +35,6 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
     
     def dist_to_right_dot(x, y):
         return ((x - 1.5 * r_big)**2 + (y - r_big)**2) ** 0.5 
+    
+    def dist_to_left_dot(x, y):
+        return ((x - 0.5 * r_big)**2 + (y - r_big)**2) ** 0.5 
