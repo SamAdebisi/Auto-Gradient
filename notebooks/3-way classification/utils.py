@@ -42,3 +42,4 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
     def which_class(x, y):
         d_right = dist_to_right_dot(x, y)
         d_left = dist_to_left_dot(x, y)
+        criterion1 = d_right <= r_small 
