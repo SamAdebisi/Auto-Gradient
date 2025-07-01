@@ -111,3 +111,5 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
         fillcolor = n._vis_color if hasattr(n, '_vis_color') else "white" 
         dot.node(name=str(id(n)), label="data: %.4f\ngrad: %.4f" % (n.data, n.grad), shape='box', 
                  style='filled', fillcolor=fillcolor, width='0.1', height='0.1', fontsize='10')
+        if n._op:
+            dot.node(name=str(id(n)) + n._op, label=n._op, width='0.1', height='0.1', fontsize='10')
