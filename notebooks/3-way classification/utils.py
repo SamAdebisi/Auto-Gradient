@@ -46,4 +46,7 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
         criterion2 = d_left > r_small and d_left <= 0.5 * r_big 
         criterion3 = y > r_big and d_right > 0.5 * r_big 
         is_yin = criterion1 or criterion2 or criterion3 
+        is_circles = d_right < r_small or d_left < r_small 
         
+        if is_circles:
+            return 2 
