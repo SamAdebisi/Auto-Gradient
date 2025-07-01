@@ -32,3 +32,5 @@ class RNG:
 # Thank you https://github.com/lkriener/yin_yang_data_set
 def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
     pts =[] 
+    
+    
