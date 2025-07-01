@@ -85,3 +85,5 @@ def vis_color(nodes, color):
 def trace(root):
     # traces the full graph of nodes and edges starting from the root 
     nodes, edges = [], [] 
+    def build(v):
+        pass 
