@@ -20,3 +20,7 @@ class RNG:
     def random(self):
         # random float32 in [0, 1]
         return (self.random_u32() >> 8) / 16777216.0 
+    
+    def uniform(self, a=0.0, b=1.0):
+        # random float32 in [a, b]
+        return a + (b-a) * self.random() 
