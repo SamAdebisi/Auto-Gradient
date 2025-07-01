@@ -117,3 +117,6 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
             
     for n1, n2 in edges:
         dot.edge(str(id(n1)), str(id(n2)) + n2._op, minlen='1')
+        
+    print("found a total of ", len(nodes), "nodes and", len(edges), "edges")
+    print("saving graph to", outfile + "." + format)
