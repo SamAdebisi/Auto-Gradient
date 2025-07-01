@@ -19,4 +19,4 @@ class RNG:
     
     def random(self):
         # random float32 in [0, 1]
-        
+        return (self.random_u32() >> 8) / 16777216.0 
