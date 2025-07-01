@@ -81,3 +81,6 @@ def vis_color(nodes, color):
     # colors a set of nodes (for visualization)
     for n in nodes:
         setattr(n, '_vis_color', color)
+
+def trace(root):
+    # traces the full graph of nodes and edges starting from the root 
