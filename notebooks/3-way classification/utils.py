@@ -98,4 +98,5 @@ def trace(root):
 def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
     """"
     format: png | svg | ... 
+    rankdir: TB (top to bottom graph) | LR (left to right)
     """ 
