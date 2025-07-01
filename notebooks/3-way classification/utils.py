@@ -121,3 +121,4 @@ def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
     print("found a total of ", len(nodes), "nodes and", len(edges), "edges")
     print("saving graph to", outfile + "." + format)
     dot.render(outfile, format=format) 
+    
