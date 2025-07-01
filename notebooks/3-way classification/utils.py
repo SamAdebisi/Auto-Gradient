@@ -96,4 +96,6 @@ def trace(root):
     return nodes, edges 
 
 def draw_dot(root, format='svg', rankdir='LR', outfile='graph'):
-    pass 
+    """"
+    format: png | svg | ... 
+    """ 
