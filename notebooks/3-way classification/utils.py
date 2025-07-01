@@ -29,4 +29,4 @@ class RNG:
 # data related 
 
 # Generates the Yin Yang dataset. 
-# Thank you 
+# Thank you https://github.com/lkriener/yin_yang_data_set
