@@ -14,4 +14,4 @@ class RNG:
         # doing & 0xFFFFFFFF is the same as cast to uint32 in C
         self.state ^= (self.state >> 12) & 0xFFFFFFFFFFFFFFFF
         self.state ^= (self.state << 25) & 0xFFFFFFFFFFFFFFFF
-        
+        self.state ^= (self.state >> 27) & 0xFFFFFFFFFFFFFFFF
