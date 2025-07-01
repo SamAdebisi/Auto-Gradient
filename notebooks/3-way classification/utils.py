@@ -63,3 +63,7 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
                 scaled_x = (x / r_big - 1) * 2
                 scaled_y = (y / r_big - 1) * 2
                 return [scaled_x, scaled_y, c]
+            
+    for i in range(n):
+        goal_class = i % 3
+        x, y, c = get_sample(goal_class)
