@@ -24,3 +24,5 @@ class RNG:
     def uniform(self, a=0.0, b=1.0):
         # random float32 in [a, b]
         return a + (b-a) * self.random() 
+    
+# data related 
