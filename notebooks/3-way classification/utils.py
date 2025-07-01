@@ -59,3 +59,7 @@ def gen_data_yinyang(random: RNG, n=1000, r_small=0.1, r_big=0.5):
             if ((x - r_big)**2 + (y - r_big)**2) ** 0.5 > r_big:
                 continue 
             c = which_class(x, y)
+            if goal_class is None or c == goal_class:
+                scaled_x = (x / r_big - 1) * 2
+                scaled_y = (y / r_big - 1) * 2
+                return [scaled_x, scaled_y, c]
