@@ -18,3 +18,5 @@ class Value:
         self.grad = 0 
         # internal variables used for autograd graph construction 
         self._backward = lambda: None 
+        self._prev = _prev 
+        self._op = _op 
