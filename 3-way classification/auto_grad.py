@@ -19,4 +19,7 @@ class Value:
         # internal variables used for autograd graph construction 
         self._backward = lambda: None 
         self._prev = _prev 
-        self._op = _op 
+        self._op = _op # the op that produced this node, for graphviz / debugging / etc 
+        
+    def __add__(self, other):
+        other = other if isinstance(other, Value) else Value(other)
