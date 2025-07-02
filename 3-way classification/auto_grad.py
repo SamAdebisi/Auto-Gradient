@@ -16,4 +16,4 @@ class Value:
     def __init__(self, data, _prev=(), _op=''):
         self.data = data 
         self.grad = 0 
-        
+        # internal variables used for autograd graph construction 
