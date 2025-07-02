@@ -42,3 +42,6 @@ class Value:
         out._backward = _backward 
         
         return out 
+    
+    def __pow__(self, other):
+        assert isinstance(other, (int, float)), "only suppoprting int/float powers for now"
