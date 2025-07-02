@@ -9,3 +9,6 @@ random = RNG(42)
 
 # ---------------------------------------------
 # Value. Similar to PyTorch's Tensor but only of size 1 element 
+
+class Value:
+    """ stores a single scalar value and its gradient """
