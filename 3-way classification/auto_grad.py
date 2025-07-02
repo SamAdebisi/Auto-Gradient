@@ -31,3 +31,6 @@ class Value:
         out._backward = _backward 
         
         return out 
+    
+    def __mul__(self, other):
+        other = other if isinstance(other, Value) else Value(other)
