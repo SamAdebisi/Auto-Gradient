@@ -12,3 +12,7 @@ random = RNG(42)
 
 class Value:
     """ stores a single scalar value and its gradient """ 
+    
+    def __init__(self, data, _prev=(), _op=''):
+        self.data = data 
+        
