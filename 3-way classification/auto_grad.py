@@ -8,3 +8,4 @@ from utils import RNG, gen_data_yinyang, draw_dot, vis_color
 random = RNG(42) 
 
 # ---------------------------------------------
+# Value. Similar to PyTorch's Tensor but only of size 1 element 
