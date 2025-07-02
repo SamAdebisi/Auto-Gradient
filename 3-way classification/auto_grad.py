@@ -4,3 +4,4 @@ Defines a simple autograd engine and uses it to classify points in the plane to 
 """
 
 import math 
+from utils import RNG, gen_data_yinyang, draw_dot, vis_color 
