@@ -17,3 +17,4 @@ class Value:
         self.data = data 
         self.grad = 0 
         # internal variables used for autograd graph construction 
+        self._backward = lambda: None 
