@@ -73,3 +73,7 @@ class Value:
     
     def exp(self):
         out = Value(math.exp(self.data), (self,), 'exp')
+        
+        def _backward():
+            self.grad += out.data * out.grad 
+        out._backward = _backward 
