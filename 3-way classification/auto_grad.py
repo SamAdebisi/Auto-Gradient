@@ -94,3 +94,8 @@ class Value:
         
         # topological order all of the children in the graph 
         topo = [] 
+        visited = set()
+        
+        def build_topo(v):
+            if v not in visited:
+                visited.add(v)
