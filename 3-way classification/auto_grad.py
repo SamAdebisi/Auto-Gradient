@@ -70,3 +70,6 @@ class Value:
         out._backward = _backward 
         
         return out 
+    
+    def exp(self):
+        out = Value(math.exp(self.data), (self,), 'exp')
