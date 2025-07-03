@@ -82,3 +82,7 @@ class Value:
     
     def log(self):
         # this is the natural log 
+        out = Value(math.log(self.data), (self,), 'log')
+        
+        def _backward():
+            self.grad += (1/self.data) * out.grad 
