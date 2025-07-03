@@ -64,3 +64,7 @@ class Value:
     
     def tanh(self):
         out = Value(math.tanh(self.data), (self,), 'tanh')
+        
+        def _backward():
+            self.grad += (1 - out.data**2) * out.grad 
+        out._backward = _backward 
