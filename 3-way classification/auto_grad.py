@@ -79,3 +79,6 @@ class Value:
         out._backward = _backward 
         
         return out 
+    
+    def log(self):
+        # this is the natural log 
