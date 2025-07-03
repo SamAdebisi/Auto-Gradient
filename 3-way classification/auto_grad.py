@@ -89,3 +89,7 @@ class Value:
         out._backward = _backward 
         
         return out 
+    
+    def backward(self):
+        
+        # topological order all of the children in the graph 
