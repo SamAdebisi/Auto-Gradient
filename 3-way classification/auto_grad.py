@@ -93,3 +93,4 @@ class Value:
     def backward(self):
         
         # topological order all of the children in the graph 
+        topo = [] 
