@@ -111,3 +111,5 @@ class Value:
             
     def __neg__(self): # -self 
         return self * -1.0 
+    
+    
