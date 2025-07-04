@@ -126,3 +126,6 @@ class Value:
     
     def __truediv__(self, other): # self / other 
         return self * other**-1 
+    
+    def __rtruediv__(self, other):
+        return other * self**-1 
