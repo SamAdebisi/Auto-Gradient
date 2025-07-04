@@ -116,3 +116,4 @@ class Value:
         return self + other 
     
     def __sub__(self, other): # self - other 
+        return self + (-other) 
