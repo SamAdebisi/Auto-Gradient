@@ -103,3 +103,6 @@ class Value:
                     build_topo(child)
                 topo.append(v)
         build_topo(self)
+        
+        # go one variable at a time and apply the chain rule to get its gradient 
+        self.grad = 1 
