@@ -114,3 +114,5 @@ class Value:
     
     def __radd__(self, other): # other + self 
         return self + other 
+    
+    def __sub__(self, other): # self - other 
