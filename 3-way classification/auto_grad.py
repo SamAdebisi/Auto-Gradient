@@ -102,3 +102,4 @@ class Value:
                 for child in v._prev:
                     build_topo(child)
                 topo.append(v)
+        build_topo(self)
