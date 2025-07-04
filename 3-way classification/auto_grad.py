@@ -99,3 +99,6 @@ class Value:
         def build_topo(v):
             if v not in visited:
                 visited.add(v)
+                for child in v._prev:
+                    build_topo(child)
+                topo.append(v)
