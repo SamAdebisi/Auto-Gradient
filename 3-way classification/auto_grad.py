@@ -134,3 +134,5 @@ class Value:
         return f"Value(data={self.data}, grad={self.grad})" 
     
 # ------------ 
+# Multi-Layer Perception (MLP) network. 
+# Module here is similar to PyTorch's nn.Module 
